@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/Project.Business/obj/Release
+/Project.Web/obj/Release
+/Project.DataAccess/obj/Release
