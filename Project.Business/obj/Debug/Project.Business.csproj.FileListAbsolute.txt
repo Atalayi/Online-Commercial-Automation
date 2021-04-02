@@ -1,0 +1,6 @@
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Business\bin\Debug\Project.Business.dll
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Business\bin\Debug\Project.Business.pdb
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Business\obj\Debug\Project.Business.csprojAssemblyReference.cache
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Business\obj\Debug\Project.Business.csproj.CoreCompileInputs.cache
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Business\obj\Debug\Project.Business.dll
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Business\obj\Debug\Project.Business.pdb

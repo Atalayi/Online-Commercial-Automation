@@ -1,0 +1,223 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE16CCDA-DD44-46D0-A2BF-0442C2D67995}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project.Web</RootNamespace>
+    <AssemblyName>Project.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44329</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\.gitignore" />
+    <Content Include="Content\dist\401.html" />
+    <Content Include="Content\dist\404.html" />
+    <Content Include="Content\dist\500.html" />
+    <Content Include="Content\dist\assets\demo\chart-area-demo.js" />
+    <Content Include="Content\dist\assets\demo\chart-bar-demo.js" />
+    <Content Include="Content\dist\assets\demo\chart-pie-demo.js" />
+    <Content Include="Content\dist\assets\demo\datatables-demo.js" />
+    <Content Include="Content\dist\assets\img\error-404-monochrome.svg" />
+    <Content Include="Content\dist\charts.html" />
+    <Content Include="Content\dist\css\1.png" />
+    <Content Include="Content\dist\css\styles.css" />
+    <Content Include="Content\dist\index.html" />
+    <Content Include="Content\dist\js\scripts.js" />
+    <Content Include="Content\dist\layout-sidenav-light.html" />
+    <Content Include="Content\dist\layout-static.html" />
+    <Content Include="Content\dist\login.html" />
+    <Content Include="Content\dist\password.html" />
+    <Content Include="Content\dist\register.html" />
+    <Content Include="Content\dist\tables.html" />
+    <Content Include="Content\index.html" />
+    <Content Include="Content\scripts\build-assets.js" />
+    <Content Include="Content\scripts\build-pug.js" />
+    <Content Include="Content\scripts\build-scripts.js" />
+    <Content Include="Content\scripts\build-scss.js" />
+    <Content Include="Content\scripts\clean.js" />
+    <Content Include="Content\scripts\render-assets.js" />
+    <Content Include="Content\scripts\render-pug.js" />
+    <Content Include="Content\scripts\render-scripts.js" />
+    <Content Include="Content\scripts\render-scss.js" />
+    <Content Include="Content\scripts\sb-watch.js" />
+    <Content Include="Content\scripts\start-debug.js" />
+    <Content Include="Content\scripts\start.js" />
+    <Content Include="Content\src\assets\demo\chart-area-demo.js" />
+    <Content Include="Content\src\assets\demo\chart-bar-demo.js" />
+    <Content Include="Content\src\assets\demo\chart-pie-demo.js" />
+    <Content Include="Content\src\assets\demo\datatables-demo.js" />
+    <Content Include="Content\src\assets\img\error-404-monochrome.svg" />
+    <Content Include="Content\src\js\scripts.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\.browserslistrc" />
+    <Content Include="Content\.travis.yml" />
+    <Content Include="Content\LICENSE" />
+    <Content Include="Content\package-lock.json" />
+    <Content Include="Content\package.json" />
+    <Content Include="Content\README.md" />
+    <Content Include="Content\src\pug\layouts\authentication.pug" />
+    <Content Include="Content\src\pug\layouts\dashboard.pug" />
+    <Content Include="Content\src\pug\layouts\error.pug" />
+    <Content Include="Content\src\pug\layouts\includes\footer.pug" />
+    <Content Include="Content\src\pug\layouts\includes\head\css.pug" />
+    <Content Include="Content\src\pug\layouts\includes\head\icons.pug" />
+    <Content Include="Content\src\pug\layouts\includes\head\meta.pug" />
+    <Content Include="Content\src\pug\layouts\includes\head\title.pug" />
+    <Content Include="Content\src\pug\layouts\includes\navigation\sidenav.pug" />
+    <Content Include="Content\src\pug\layouts\includes\navigation\topnav.pug" />
+    <Content Include="Content\src\pug\layouts\includes\scripts.pug" />
+    <Content Include="Content\src\pug\pages\401.pug" />
+    <Content Include="Content\src\pug\pages\404.pug" />
+    <Content Include="Content\src\pug\pages\500.pug" />
+    <Content Include="Content\src\pug\pages\charts.pug" />
+    <Content Include="Content\src\pug\pages\includes\datatable.pug" />
+    <Content Include="Content\src\pug\pages\includes\page-header.pug" />
+    <Content Include="Content\src\pug\pages\index.pug" />
+    <Content Include="Content\src\pug\pages\layout-sidenav-light.pug" />
+    <Content Include="Content\src\pug\pages\layout-static.pug" />
+    <Content Include="Content\src\pug\pages\login.pug" />
+    <Content Include="Content\src\pug\pages\password.pug" />
+    <Content Include="Content\src\pug\pages\register.pug" />
+    <Content Include="Content\src\pug\pages\tables.pug" />
+    <Content Include="Content\src\scss\layout\_authentication.scss" />
+    <Content Include="Content\src\scss\layout\_dashboard-default.scss" />
+    <Content Include="Content\src\scss\layout\_dashboard-fixed.scss" />
+    <Content Include="Content\src\scss\layout\_error.scss" />
+    <Content Include="Content\src\scss\navigation\sidenav\_sidenav-dark.scss" />
+    <Content Include="Content\src\scss\navigation\sidenav\_sidenav-light.scss" />
+    <Content Include="Content\src\scss\navigation\sidenav\_sidenav.scss" />
+    <Content Include="Content\src\scss\navigation\_nav.scss" />
+    <Content Include="Content\src\scss\navigation\_topnav.scss" />
+    <Content Include="Content\src\scss\styles.scss" />
+    <Content Include="Content\src\scss\variables\_navigation.scss" />
+    <Content Include="Content\src\scss\variables\_spacing.scss" />
+    <Content Include="Content\src\scss\_global.scss" />
+    <Content Include="Content\src\scss\_variables.scss" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Business\Project.Business.csproj">
+      <Project>{8211c356-6141-47b4-90be-f515939542f8}</Project>
+      <Name>Project.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Project.DataAccess\Project.DataAccess.csproj">
+      <Project>{559b7a9d-db3e-4340-b6a4-099cf392c41e}</Project>
+      <Name>Project.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56867</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44329/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
