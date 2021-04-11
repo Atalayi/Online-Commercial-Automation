@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0a82a7bd03c440c5b2ecf9c259e112da" Name="Diagram1">
+        <EntityTypeShape EntityType="WebAutomationModel.Adminler" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAutomationModel.Cariler" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAutomationModel.Departmanlar" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAutomationModel.Kategoriler" Width="1.5" PointX="0.625" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAutomationModel.Personeller" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAutomationModel.SatisHareketler" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAutomationModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebAutomationModel.Urunler" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="WebAutomationModel.FK_SatisHareketler_Cariler" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAutomationModel.FK_Personeller_Departmanlar" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAutomationModel.FK_Urunler_Kategoriler" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAutomationModel.FK_SatisHareketler_Personeller" ManuallyRouted="false" />
+        <AssociationConnector Association="WebAutomationModel.FK_SatisHareketler_Urunler1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
