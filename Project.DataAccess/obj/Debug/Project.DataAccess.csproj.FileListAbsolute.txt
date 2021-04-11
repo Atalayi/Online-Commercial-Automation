@@ -1,6 +1,11 @@
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\bin\Debug\Project.DataAccess.dll
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\bin\Debug\Project.DataAccess.pdb
-C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\obj\Debug\Project.DataAccess.csprojAssemblyReference.cache
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\obj\Debug\Project.DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\obj\Debug\Project.DataAccess.dll
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\obj\Debug\Project.DataAccess.pdb
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\bin\Debug\Project.DataAccess.dll.config
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.DataAccess\obj\Debug\Project.DataAccess.csproj.CopyComplete

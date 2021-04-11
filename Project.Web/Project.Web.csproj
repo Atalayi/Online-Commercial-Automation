@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cari\CariDefault.aspx" />
     <Content Include="Content\.gitignore" />
     <Content Include="Content\dist\401.html" />
     <Content Include="Content\dist\404.html" />
@@ -107,9 +108,20 @@
     <Content Include="Content\src\assets\img\error-404-monochrome.svg" />
     <Content Include="Content\src\js\scripts.js" />
     <Content Include="Default.aspx" />
+    <Content Include="Departman\DepartmanDefault.aspx" />
+    <Content Include="Kategori\KategoriDefault.aspx" />
+    <Content Include="Personel\PersonelDefault.aspx" />
+    <Content Include="Urun\UrunDefault.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cari\CariDefault.aspx.cs">
+      <DependentUpon>CariDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cari\CariDefault.aspx.designer.cs">
+      <DependentUpon>CariDefault.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -117,7 +129,42 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Departman\DepartmanDefault.aspx.cs">
+      <DependentUpon>DepartmanDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departman\DepartmanDefault.aspx.designer.cs">
+      <DependentUpon>DepartmanDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategori\KategoriDefault.aspx.cs">
+      <DependentUpon>KategoriDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategori\KategoriDefault.aspx.designer.cs">
+      <DependentUpon>KategoriDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMasterPage.Master.cs">
+      <DependentUpon>MainMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMasterPage.Master.designer.cs">
+      <DependentUpon>MainMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Personel\PersonelDefault.aspx.cs">
+      <DependentUpon>PersonelDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personel\PersonelDefault.aspx.designer.cs">
+      <DependentUpon>PersonelDefault.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Urun\UrunDefault.aspx.cs">
+      <DependentUpon>UrunDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Urun\UrunDefault.aspx.designer.cs">
+      <DependentUpon>UrunDefault.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\.browserslistrc" />
@@ -164,6 +211,7 @@
     <Content Include="Content\src\scss\variables\_spacing.scss" />
     <Content Include="Content\src\scss\_global.scss" />
     <Content Include="Content\src\scss\_variables.scss" />
+    <Content Include="MainMasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -182,6 +230,7 @@
       <Name>Project.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
