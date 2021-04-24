@@ -107,7 +107,6 @@
     <Content Include="Content\src\assets\demo\datatables-demo.js" />
     <Content Include="Content\src\assets\img\error-404-monochrome.svg" />
     <Content Include="Content\src\js\scripts.js" />
-    <Content Include="Default.aspx" />
     <Content Include="Departman\DepartmanDefault.aspx" />
     <Content Include="Kategori\KategoriDefault.aspx" />
     <Content Include="Personel\PersonelDefault.aspx" />
@@ -121,13 +120,6 @@
     </Compile>
     <Compile Include="Cari\CariDefault.aspx.designer.cs">
       <DependentUpon>CariDefault.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Departman\DepartmanDefault.aspx.cs">
       <DependentUpon>DepartmanDefault.aspx</DependentUpon>
