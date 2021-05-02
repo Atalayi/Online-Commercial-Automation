@@ -61,3 +61,4 @@ C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\Project.DataAcc
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\EntityFramework.dll
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\Project.DataAccess.dll.config
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\EntityFramework.xml
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\Project.Business.dll.config

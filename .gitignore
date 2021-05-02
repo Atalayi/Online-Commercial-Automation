@@ -360,7 +360,28 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
 /.vs
 /Project.Business/obj/Release
 /Project.Web/obj/Release
 /Project.DataAccess/obj/Release
+/Project.Business/Class1.cs
+/Project.Business/bin/Debug/Project.Business.dll
+/Project.Business/bin/Debug/Project.Business.pdb
+/Project.Business/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Project.Business/obj/Debug/Project.Business.csproj.CoreCompileInputs.cache
+/Project.Business/obj/Debug/Project.Business.csproj.FileListAbsolute.txt
+/Project.Business/obj/Debug/Project.Business.csprojAssemblyReference.cache
+/Project.Business/obj/Debug/Project.Business.dll
+/Project.Business/obj/Debug/Project.Business.pdb
+/Project.DataAccess/obj/Debug/Project.DataAccess.csprojAssemblyReference.cache
+/Project.Web/bin/Project.Business.dll
+/Project.Web/bin/Project.Business.pdb
+/Project.Web/bin/Project.Web.dll
+/Project.Web/bin/Project.Web.pdb
+/Project.Web/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/Project.Web/obj/Debug/Project.Web.csproj.CoreCompileInputs.cache
+/Project.Web/obj/Debug/Project.Web.csproj.FileListAbsolute.txt
+/Project.Web/obj/Debug/Project.Web.csprojAssemblyReference.cache
+/Project.Web/obj/Debug/Project.Web.dll
+/Project.Web/obj/Debug/Project.Web.pdb
