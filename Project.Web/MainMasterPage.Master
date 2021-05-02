@@ -104,8 +104,11 @@
                     <asp:ContentPlaceHolder ID="cari" runat="server"></asp:ContentPlaceHolder>
                     <asp:ContentPlaceHolder ID="departman" runat="server"></asp:ContentPlaceHolder>
                     <asp:ContentPlaceHolder ID="kategori" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="kategoriEkle" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="kategoriGetir" runat="server"></asp:ContentPlaceHolder>
                     <asp:ContentPlaceHolder ID="personel" runat="server"></asp:ContentPlaceHolder>
                     <asp:ContentPlaceHolder ID="urun" runat="server"></asp:ContentPlaceHolder>
+                    
                 </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
