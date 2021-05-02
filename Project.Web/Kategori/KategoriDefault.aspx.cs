@@ -11,7 +11,16 @@ namespace Project.Web.Kategori
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            KategoriGetir();
+        }
+        private void KategoriGetir()
+        {
 
+        }
+
+        protected void btnNewCat_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("KategoriEkle.aspx");
         }
     }
 }

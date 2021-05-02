@@ -10,7 +10,7 @@
 namespace Project.Web.Kategori {
     
     
-    public partial class KategoriDefault {
+    public partial class KategoriEkle {
         
         /// <summary>
         /// form1 control.
@@ -22,12 +22,30 @@ namespace Project.Web.Kategori {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// btnNewCat control.
+        /// lblKategori control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNewCat;
+        protected global::System.Web.UI.WebControls.Label lblKategori;
+        
+        /// <summary>
+        /// txtKategoriAd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtKategoriAd;
+        
+        /// <summary>
+        /// btnAddCat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddCat;
     }
 }
