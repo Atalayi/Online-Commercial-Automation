@@ -62,3 +62,5 @@ C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\EntityFramework
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\Project.DataAccess.dll.config
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\EntityFramework.xml
 C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\Project.Business.dll.config
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Semih\source\OnlineCommercialAutomation\Project.Web\bin\EntityFramework.SqlServer.xml

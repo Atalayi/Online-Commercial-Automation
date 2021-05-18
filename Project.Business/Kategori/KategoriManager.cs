@@ -17,5 +17,14 @@ namespace Project.Business.Kategori
             db.Kategoriler.Add(kat);
             db.SaveChanges();
         }
+        //public void KategoriEkle(Kategoriler p)
+        //{
+        //    db.Kategoriler.Add(p);
+        //    db.SaveChanges();
+        //}
+        public List<Kategoriler> KategoriListesi()
+        {
+                return db.Kategoriler.ToList();
+        }
     }
 }

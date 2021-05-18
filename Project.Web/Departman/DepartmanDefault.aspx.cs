@@ -13,5 +13,16 @@ namespace Project.Web.Departman
         {
 
         }
+
+        protected void myGrid_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Delete")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+
+                // delete from tblcountry where countryid="+id+";
+
+            }
+        }
     }
 }
