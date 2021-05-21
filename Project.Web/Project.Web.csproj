@@ -150,7 +150,6 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -245,7 +244,6 @@
     <Compile Include="Departman\DepartmanDefault.aspx.designer.cs">
       <DependentUpon>DepartmanDefault.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ExtendedModel\Contact.cs" />
     <Compile Include="Kategori\KategoriDefault.aspx.cs">
       <DependentUpon>KategoriDefault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -288,13 +286,6 @@
     </Compile>
     <Compile Include="Urun\UrunDefault.aspx.designer.cs">
       <DependentUpon>UrunDefault.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

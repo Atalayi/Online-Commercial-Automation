@@ -13,13 +13,13 @@ namespace Project.Web.Departman {
     public partial class DepartmanDefault {
         
         /// <summary>
-        /// form1 control.
+        /// frmDepartman control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmDepartman;
         
         /// <summary>
         /// ScriptManager1 control.

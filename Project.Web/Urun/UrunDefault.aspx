@@ -2,163 +2,151 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <head>
-        <style>
-            .myGrid {
-                border: 1px solid #ddd;
-                margin: 15px;
-                -webkit-border-radius: 3px 3px 0 0;
-                -moz-border-radius: 3px 3px 0 0;
-                border-radius: 3px 3px 0 0;
-            }
-
-                .myGrid td {
-                    vertical-align: top;
-                }
-
-            .header {
-                overflow: hidden;
-                position: relative;
-                border-bottom: 1px solid #ddd;
-                height: 30px;
-            }
-
-                .header th {
-                    color: #222;
-                    font-weight: normal;
-                    line-height: 40px;
-                    text-align: left;
-                    /* text-shadow: 0 1px #FFFFFF; */
-                    white-space: nowrap;
-                    border-right: 1px solid #ddd;
-                    border-bottom: 2px solid #ddd;
-                    padding: 0px 15px 0px 15px;
-                    -webkit-border-radius: 1px;
-                    -moz-border-radius: 1px;
-                }
-
-            .trow1 {
-                background: #f9f9f9;
-            }
-
-            .trow2 {
-                background: #fff;
-            }
-
-                .trow1 td, .trow2 td {
-                    color: #555;
-                    line-height: 18px;
-                    padding: 9px 5px;
-                    text-align: left;
-                    border-right: 1px solid #ddd;
-                    border-bottom: 1px solid #ddd;
-                    text-align: left;
-                }
-
-            input[type='text'], select {
-                border: 1px solid #b8b8b8;
-                border-radius: 3px;
-                color: #999999;
-                float: left;
-                height: 22px;
-                padding: 0 5px;
-                position: relative;
-                width: 185px;
-            }
-        </style>
+        <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     </head>
 </asp:Content>
 
 <asp:Content ID="Content6" ContentPlaceHolderID="urun" runat="server">
-    <form id="frmUrun" runat="server">
-        <h1><i>URUNLER SAYFASI</i></h1>
-        <div>
-            <asp:GridView ID="myGridView" runat="server" AutoGenerateColumns="false" DataKeyNames="UrunID,KategoriID" CellPadding="10" CellSpacing="0" ShowFooter="true" CssClass="myGrid"
-                HeaderStyle-CssClass="header" RowStyle-CssClass="trowl"
-                AlternatingRowStyle-CssClass="trow2" OnRowCommand="myGridView_RowCommand">
-
-
-                <Columns>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Urun Adı</HeaderTemplate>
-                        <ItemTemplate><%#Eval("UrunAd") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:TextBox ID="txtUrun" runat="server"></asp:TextBox><br />
-                            <asp:RequiredFieldValidator ID="rfUrun" runat="server" ErrorMessage="Bu alan boş geçilemez." ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="txtUrun"> Zorunlu Alan</asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Marka</HeaderTemplate>
-                        <ItemTemplate><%#Eval("Marka") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:TextBox ID="txtMarka" runat="server"></asp:TextBox><br />
-                            <asp:RequiredFieldValidator ID="rfMarka" runat="server" ErrorMessage="Bu alan boş geçilemez." ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="txtMarka"> Zorunlu Alan</asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Stok</HeaderTemplate>
-                        <ItemTemplate><%#Eval("Stok") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:TextBox ID="txtStok" runat="server"></asp:TextBox><br />
-                            <asp:RequiredFieldValidator ID="rfStok" runat="server" ErrorMessage="Bu alan boş geçilemez." ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="txtStok"> Zorunlu Alan</asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Urun Adı</HeaderTemplate>
-                        <ItemTemplate><%#Eval("AlisFiyat") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:TextBox ID="txtAlisFiyat" runat="server"></asp:TextBox><br />
-                            <asp:RequiredFieldValidator ID="rfAF" runat="server" ErrorMessage="Bu alan boş geçilemez." ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="txtAlisFiyat"> Zorunlu Alan</asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Urun Adı</HeaderTemplate>
-                        <ItemTemplate><%#Eval("SatisFiyat") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:TextBox ID="txtSatisFiyat" runat="server"></asp:TextBox><br />
-                            <asp:RequiredFieldValidator ID="rfSF" runat="server" ErrorMessage="Bu alan boş geçilemez." ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="txtSatisFiyat"> Zorunlu Alan</asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Durum</HeaderTemplate>
-                        <ItemTemplate><%#Eval("Durum") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:TextBox ID="txtDurum" runat="server"></asp:TextBox><br />
-                            <asp:RequiredFieldValidator ID="rfDurum" runat="server" ErrorMessage="Bu alan boş geçilemez." ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="txtDurum"> Zorunlu Alan</asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Urun Gorseli</HeaderTemplate>
-                        <ItemTemplate><%#Eval("UrunGorsel") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:TextBox ID="txtUrunGorsel" runat="server"></asp:TextBox><br />
-                            <asp:RequiredFieldValidator ID="rfUG" runat="server" ErrorMessage="Bu alan boş geçilemez." ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="txtUrunGorsel"> Zorunlu Alan</asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <HeaderTemplate>Kategoriler</HeaderTemplate>
-                        <ItemTemplate><%#Eval("KategoriId") %></ItemTemplate>
-                        <FooterTemplate>
-                            <asp:DropDownList ID="ddKategori" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddKategori_SelectedIndexChanged">
-                                <asp:ListItem Text="Kategori Seçiniz" Value="0"></asp:ListItem>
-                            </asp:DropDownList>
-                            <br />
-                            <asp:RequiredFieldValidator ID="rfKategori" runat="server" ErrorMessage="*" ForeColor="Red" Display="Dynamic" ValidationGroup="Add" ControlToValidate="ddKategori" InitialValue="0"></asp:RequiredFieldValidator>
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                    <asp:TemplateField>
-                        <ItemTemplate>
-                            <asp:LinkButton ID="lbDuzenle" runat="server" CommandName="Duzenle">Düzenle</asp:LinkButton>
-                            &nbsp;|&nbsp;
-                            <asp:LinkButton ID="lbSil" runat="server" CommandName="Sil">Sil</asp:LinkButton>
-                        </ItemTemplate>
-                        <FooterTemplate>
-                            <asp:Button ID="btnEkle" runat="server" Text="Kaydet" CommandName="Ekle" ValidationGroup="Add" />
-                        </FooterTemplate>
-                    </asp:TemplateField>
-                </Columns>
-
-
-            </asp:GridView>
+    <br />
+    <form id="frmUrun" runat="server">  
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="clearfix">
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <div class="col-md-12">
+                        <div style="overflow: visible;" class="table-responsive">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebAutomationConnectionString %>" DeleteCommand="DELETE FROM [Urunler] WHERE [UrunID] = @UrunID" InsertCommand="INSERT INTO [Urunler] ([UrunAd], [Marka], [Stok], [AlisFiyat], [SatisFiyat], [Durum], [UrunGorsel], [KategoriId]) VALUES (@UrunAd, @Marka, @Stok, @AlisFiyat, @SatisFiyat, @Durum, @UrunGorsel, @KategoriId)" SelectCommand="SELECT * FROM [Urunler] where [Durum]='True'" UpdateCommand="UPDATE [Urunler] SET [UrunAd] = @UrunAd, [Marka] = @Marka, [Stok] = @Stok, [AlisFiyat] = @AlisFiyat, [SatisFiyat] = @SatisFiyat, [Durum] = @Durum, [UrunGorsel] = @UrunGorsel, [KategoriId] = @KategoriId WHERE [UrunID] = @UrunID">
+                                <DeleteParameters>
+                                    <asp:Parameter Name="UrunID" Type="Int32" />
+                                </DeleteParameters>
+                                <InsertParameters>
+                                    <asp:Parameter Name="UrunAd" Type="String" />
+                                    <asp:Parameter Name="Marka" Type="String" />
+                                    <asp:Parameter Name="Stok" Type="Int16" />
+                                    <asp:Parameter Name="AlisFiyat" Type="Decimal" />
+                                    <asp:Parameter Name="SatisFiyat" Type="Decimal" />
+                                    <asp:Parameter Name="Durum" Type="Boolean" />
+                                    <asp:Parameter Name="UrunGorsel" Type="String" />
+                                    <asp:Parameter Name="KategoriId" Type="Int32" />
+                                </InsertParameters>
+                                <UpdateParameters>
+                                    <asp:Parameter Name="UrunAd" Type="String" />
+                                    <asp:Parameter Name="Marka" Type="String" />
+                                    <asp:Parameter Name="Stok" Type="Int16" />
+                                    <asp:Parameter Name="AlisFiyat" Type="Decimal" />
+                                    <asp:Parameter Name="SatisFiyat" Type="Decimal" />
+                                    <asp:Parameter Name="Durum" Type="Boolean" />
+                                    <asp:Parameter Name="UrunGorsel" Type="String" />
+                                    <asp:Parameter Name="KategoriId" Type="Int32" />
+                                    <asp:Parameter Name="UrunID" Type="Int32" />
+                                </UpdateParameters>
+                            </asp:SqlDataSource>
+                            <asp:GridView ID="myGrid" CssClass="table table-bordered table-hover table-active" Width="100%" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="UrunID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" BorderColor="#3366CC" BorderWidth="1px" GridLines="None" OnRowCommand="myGrid_RowCommand">
+                                <AlternatingRowStyle BackColor="White" />
+                                <Columns>
+                                    
+                                    <asp:TemplateField HeaderText="ID" InsertVisible="False" SortExpression="UrunID">
+                                        <EditItemTemplate>
+                                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("UrunID") %>'></asp:Label>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label1" runat="server" Text='<%# Bind("UrunID") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Ürün Adı" SortExpression="UrunAd">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox1" Width="100%" runat="server" Text='<%# Bind("UrunAd") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label2" runat="server" Text='<%# Bind("UrunAd") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Marka" SortExpression="Marka">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox2" Width="100%"  runat="server" Text='<%# Bind("Marka") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label3" runat="server" Text='<%# Bind("Marka") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Stok" SortExpression="Stok">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox3" Width="100%"  runat="server" Text='<%# Bind("Stok") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label4" runat="server" Text='<%# Bind("Stok") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Alış Fiyatı" SortExpression="AlisFiyat">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox4" Width="100%"  runat="server" Text='<%# Bind("AlisFiyat") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label5" runat="server" Text='<%# Bind("AlisFiyat") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Satış Fiyatı" SortExpression="SatisFiyat">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox5" Width="100%"  runat="server" Text='<%# Bind("SatisFiyat") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label6" runat="server" Text='<%# Bind("SatisFiyat") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Durum" SortExpression="Durum">
+                                        <EditItemTemplate>
+                                            <asp:CheckBox ID="CheckBox1" Width="100%"  runat="server" Checked='<%# Bind("Durum") %>' />
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%# Bind("Durum") %>' Enabled="false" />
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="Ürün Görseli" SortExpression="UrunGorsel">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox6" Width="100%"  runat="server" Text='<%# Bind("UrunGorsel") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label7" runat="server" Text='<%# Bind("UrunGorsel") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField HeaderText="KategoriId" SortExpression="KategoriId">
+                                        <EditItemTemplate>
+                                            <asp:TextBox ID="TextBox7" Width="100%" runat="server" Text='<%# Bind("KategoriId") %>'></asp:TextBox>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Label ID="Label8" runat="server" Text='<%# Bind("KategoriId") %>'></asp:Label>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField ShowHeader="False" HeaderText="Sil">
+                                        <ItemTemplate>
+                                            <asp:Button ID="btnDelete" CssClass="btn btn-danger" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("UrunID") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:Button>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:TemplateField ShowHeader="False" HeaderText="Düzenle">
+                                        <EditItemTemplate>
+                                            <asp:Button ID="btnUpdate" CssClass="btn btn-info" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelle"></asp:Button>
+                                            <asp:Button ID="btnCancel"  CssClass="btn btn-warning" runat="server" CausesValidation="False" CommandName="Cancel" Text="iptal"></asp:Button>
+                                        </EditItemTemplate>
+                                        <ItemTemplate>
+                                            <asp:Button ID="btnEdit" CssClass="btn btn-success" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:Button>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                </Columns>
+                                <EditRowStyle BackColor="#2461BF" />
+                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#EFF3FB" />
+                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                                <SortedDescendingHeaderStyle BackColor="#4870BE" />
+                            </asp:GridView>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
         </div>
     </form>
 

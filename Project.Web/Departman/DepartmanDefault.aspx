@@ -9,7 +9,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="departman" runat="server">
     <br />
-    <form id="form1" runat="server">
+    <form id="frmDepartman" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div class="clearfix">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
