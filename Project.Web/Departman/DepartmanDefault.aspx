@@ -66,7 +66,7 @@
                                     <asp:TemplateField ShowHeader="False" HeaderText="Düzenle">
                                         <EditItemTemplate>
                                             <asp:Button ID="btnUpdate" CssClass="btn btn-info" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelle"></asp:Button>
-                                            &nbsp;<asp:Button ID="btnCancel" CssClass="btn btn-warning" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:Button>
+                                            <asp:Button ID="btnCancel" CssClass="btn btn-warning" runat="server" CausesValidation="False" CommandName="Cancel" Text="İptal"></asp:Button>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Button ID="btnEdit" CssClass="btn btn-success" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:Button>
