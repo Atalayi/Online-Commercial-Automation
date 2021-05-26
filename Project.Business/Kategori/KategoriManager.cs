@@ -22,9 +22,9 @@ namespace Project.Business.Kategori
         //    db.Kategoriler.Add(p);
         //    db.SaveChanges();
         //}
-        public List<Kategoriler> KategoriListesi()
-        {
-                return db.Kategoriler.ToList();
-        }
+        //public List<Kategoriler> KategoriListesi()
+        //{
+        //        return db.Kategoriler.ToList();
+        //}
     }
 }

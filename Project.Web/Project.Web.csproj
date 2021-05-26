@@ -125,7 +125,6 @@
     <Content Include="Departman\DepartmanDefault.aspx" />
     <Content Include="Kategori\KategoriDefault.aspx" />
     <Content Include="Kategori\KategoriEkle.aspx" />
-    <Content Include="Kategori\KategoriGetir.aspx" />
     <Content Include="Personel\PersonelDefault.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -257,13 +256,6 @@
     </Compile>
     <Compile Include="Kategori\KategoriEkle.aspx.designer.cs">
       <DependentUpon>KategoriEkle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Kategori\KategoriGetir.aspx.cs">
-      <DependentUpon>KategoriGetir.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Kategori\KategoriGetir.aspx.designer.cs">
-      <DependentUpon>KategoriGetir.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainMasterPage.Master.cs">
       <DependentUpon>MainMasterPage.Master</DependentUpon>

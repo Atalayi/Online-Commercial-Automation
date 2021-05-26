@@ -11,23 +11,25 @@ namespace Project.Web.Kategori
 {
     public partial class KategoriDefault : System.Web.UI.Page
     {
-        private KategoriManager kategoriManager;
         protected void Page_Load(object sender, EventArgs e)
         {
-            kategoriManager = new KategoriManager();
-            KategoriGetir();
-        }
-        private void KategoriGetir()
-        {
-            
-            Repeater1.DataSource = kategoriManager.KategoriListesi(); 
-            Repeater1.DataBind();
-            
-        }
+           
+        }   
 
         protected void btnNewCat_Click(object sender, EventArgs e)
         {
             Response.Redirect("KategoriEkle.aspx");
+        }
+
+        protected void myGrid_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Delete")
+            {
+                int id = Convert.ToInt32(e.CommandArgument);
+
+                // delete from tblcountry where countryid="+id+";
+
+            }
         }
     }
 }

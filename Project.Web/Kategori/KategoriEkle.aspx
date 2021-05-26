@@ -11,11 +11,11 @@
     <br />
     <h2>Yeni Kategori Sayfası</h2>
     <br />
-    <form id="form1" runat="server" class="form-group" method="post">
+    <form id="frmNewCat" runat="server" class="form-group" method="post">
         <div>
 
             <asp:label id="lblKategori" runat="server" text="Kategori Adı"></asp:label>
-            <asp:textbox id="txtKategoriAd" runat="server" class="form-control"></asp:textbox>
+            <asp:textbox id="txtKategoriAd" Width="50%" runat="server" class="form-control"></asp:textbox>
             <br />
             <asp:button id="btnAddCat" runat="server" text="Kaydet" class="btn btn-info " OnClick="btnAddCat_Click"/>
 
