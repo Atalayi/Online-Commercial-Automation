@@ -56,5 +56,14 @@ namespace Project.Web.Personel {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView myGrid;
+        
+        /// <summary>
+        /// btnNewPer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnNewPer;
     }
 }

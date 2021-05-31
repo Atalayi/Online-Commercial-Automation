@@ -1,10 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="KategoriDefault.aspx.cs" Inherits="Project.Web.Kategori.KategoriDefault" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <head>
         <link href="../Content/bootstrap.min.css" rel="stylesheet" />
         <title></title>
-    </head>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="kategori" runat="server">
@@ -31,7 +29,7 @@
                             <asp:GridView ID="myGrid" CssClass="table table-bordered table-hover table-active" Width="100%" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="KategoriID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" BorderColor="#3366CC" BorderWidth="1px" OnRowCommand="myGrid_RowCommand">
                                 <AlternatingRowStyle BackColor="White" />
                                 <Columns>
-                                    
+
                                     <asp:TemplateField HeaderText="ID" InsertVisible="False" SortExpression="KategoriID">
                                         <EditItemTemplate>
                                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriID") %>'></asp:Label>
@@ -79,7 +77,9 @@
                 </ContentTemplate>
             </asp:UpdatePanel>
         </div>
-        <asp:Button ID="btnNewCat" runat="server" Text="Yeni Kategori" class="btn btn-primary" OnClick="btnNewCat_Click" />
+        <div style="padding-left: 15px;">
+            <asp:Button ID="btnNewCat" runat="server" Text="Yeni Kategori" class="btn btn-primary" OnClick="btnNewCat_Click" />
+        </div>
     </form>
 
 </asp:Content>

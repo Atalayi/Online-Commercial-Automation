@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="WebAutomationModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="Adminler">
-    <Key>
-      <PropertyRef Name="AdminID" />
-    </Key>
-    <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="KullaniciAd" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="Sifre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="Yetki" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
-  </EntityType>
   <EntityType Name="Cariler">
     <Key>
       <PropertyRef Name="CariID" />
@@ -153,7 +144,6 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="WebAutomationEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Adminler" EntityType="Self.Adminler" />
     <EntitySet Name="Cariler" EntityType="Self.Cariler" />
     <EntitySet Name="Departmanlar" EntityType="Self.Departmanlar" />
     <EntitySet Name="Kategoriler" EntityType="Self.Kategoriler" />
@@ -181,5 +171,17 @@
       <End Role="Urunler" EntitySet="Urunler" />
       <End Role="SatisHareketler" EntitySet="SatisHareketler" />
     </AssociationSet>
+    <EntitySet Name="Adminler" EntityType="WebAutomationModel.Adminler" />
   </EntityContainer>
+  <EntityType Name="Adminler">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Soyad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Yetki" Type="Int32" />
+  </EntityType>
 </Schema>

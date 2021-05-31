@@ -29,11 +29,11 @@
                                     <asp:Parameter Name="Durum" Type="Boolean" />
                                     <asp:Parameter Name="DepartmanID" Type="Int32" />
                                 </UpdateParameters>
-                            </asp:SqlDataSource> 
+                            </asp:SqlDataSource>
                             <asp:GridView ID="myGrid" CssClass="table table-bordered table-hover table-active" Width="100%" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="DepartmanID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" BorderColor="#3366CC" BorderWidth="1px" OnRowCommand="myGrid_RowCommand">
                                 <AlternatingRowStyle BackColor="White" />
                                 <Columns>
-                                    
+
                                     <asp:TemplateField HeaderText="ID" InsertVisible="False" SortExpression="DepartmanID">
                                         <EditItemTemplate>
                                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("DepartmanID") %>'></asp:Label>
@@ -60,7 +60,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField ShowHeader="False" HeaderText="Sil">
                                         <ItemTemplate>
-                                            <asp:Button ID="btnDelete" CssClass="btn btn-danger"  runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("DepartmanID") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:Button>
+                                            <asp:Button ID="btnDelete" CssClass="btn btn-danger" runat="server" CausesValidation="False" CommandName="Delete" Text="Sil" CommandArgument='<%# Bind("DepartmanID") %>' OnClientClick="return confirm('Kaydı silmek istediğinize emin misiniz?')"></asp:Button>
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:TemplateField ShowHeader="False" HeaderText="Düzenle">
@@ -84,11 +84,14 @@
                                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
                             </asp:GridView>
-                            
+
                         </div>
                     </div>
                 </ContentTemplate>
             </asp:UpdatePanel>
+        </div>
+        <div style="padding-left:15px;">
+            <asp:Button ID="btnNewDep" runat="server" Text="Yeni Departman" class="btn btn-primary" />
         </div>
     </form>
 </asp:Content>

@@ -51,8 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cari\CariManager.cs" />
     <Compile Include="Kategori\KategoriManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sessions.cs" />
+    <Compile Include="UserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Project.DataAccess\Project.DataAccess.csproj">

@@ -11,6 +11,24 @@ namespace Project.Web.Kategori
 {
     public partial class KategoriDefault : System.Web.UI.Page
     {
+        protected void Page_PreInit(object sender, EventArgs e)
+        {
+            this.MasterPageFile = "~/MainMasterPage.Master";
+
+            if (Session["role"] == null)
+            {
+                this.MasterPageFile = "~/Unauthorized.Master";
+            }
+
+            else if (Session["role"].Equals(1))
+            {
+                this.MasterPageFile = "~/MainMasterPage.Master";
+            }
+            else
+            {
+                this.MasterPageFile = "~/Unauthorized.Master";
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
            

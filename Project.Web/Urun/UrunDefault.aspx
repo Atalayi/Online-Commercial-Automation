@@ -8,7 +8,7 @@
 
 <asp:Content ID="Content6" ContentPlaceHolderID="urun" runat="server">
     <br />
-    <form id="frmUrun" runat="server">  
+    <form id="frmUrun" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div class="clearfix">
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -44,7 +44,7 @@
                             <asp:GridView ID="myGrid" CssClass="table table-bordered table-hover table-active" Width="100%" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="UrunID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" BorderColor="#3366CC" BorderWidth="1px" GridLines="None" OnRowCommand="myGrid_RowCommand">
                                 <AlternatingRowStyle BackColor="White" />
                                 <Columns>
-                                    
+
                                     <asp:TemplateField HeaderText="ID" InsertVisible="False" SortExpression="UrunID">
                                         <EditItemTemplate>
                                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("UrunID") %>'></asp:Label>
@@ -63,7 +63,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Marka" SortExpression="Marka">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox2" Width="100%"  runat="server" Text='<%# Bind("Marka") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox2" Width="100%" runat="server" Text='<%# Bind("Marka") %>'></asp:TextBox>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label3" runat="server" Text='<%# Bind("Marka") %>'></asp:Label>
@@ -71,7 +71,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Stok" SortExpression="Stok">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox3" Width="100%"  runat="server" Text='<%# Bind("Stok") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox3" Width="100%" runat="server" Text='<%# Bind("Stok") %>'></asp:TextBox>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label4" runat="server" Text='<%# Bind("Stok") %>'></asp:Label>
@@ -79,7 +79,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Alış Fiyatı" SortExpression="AlisFiyat">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox4" Width="100%"  runat="server" Text='<%# Bind("AlisFiyat") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox4" Width="100%" runat="server" Text='<%# Bind("AlisFiyat") %>'></asp:TextBox>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label5" runat="server" Text='<%# Bind("AlisFiyat") %>'></asp:Label>
@@ -87,7 +87,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Satış Fiyatı" SortExpression="SatisFiyat">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox5" Width="100%"  runat="server" Text='<%# Bind("SatisFiyat") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox5" Width="100%" runat="server" Text='<%# Bind("SatisFiyat") %>'></asp:TextBox>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label6" runat="server" Text='<%# Bind("SatisFiyat") %>'></asp:Label>
@@ -95,7 +95,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Durum" SortExpression="Durum">
                                         <EditItemTemplate>
-                                            <asp:CheckBox ID="CheckBox1" Width="100%"  runat="server" Checked='<%# Bind("Durum") %>' />
+                                            <asp:CheckBox ID="CheckBox1" Width="100%" runat="server" Checked='<%# Bind("Durum") %>' />
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%# Bind("Durum") %>' Enabled="false" />
@@ -103,7 +103,7 @@
                                     </asp:TemplateField>
                                     <asp:TemplateField HeaderText="Ürün Görseli" SortExpression="UrunGorsel">
                                         <EditItemTemplate>
-                                            <asp:TextBox ID="TextBox6" Width="100%"  runat="server" Text='<%# Bind("UrunGorsel") %>'></asp:TextBox>
+                                            <asp:TextBox ID="TextBox6" Width="100%" runat="server" Text='<%# Bind("UrunGorsel") %>'></asp:TextBox>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label7" runat="server" Text='<%# Bind("UrunGorsel") %>'></asp:Label>
@@ -125,7 +125,7 @@
                                     <asp:TemplateField ShowHeader="False" HeaderText="Düzenle">
                                         <EditItemTemplate>
                                             <asp:Button ID="btnUpdate" CssClass="btn btn-info" runat="server" CausesValidation="True" CommandName="Update" Text="Güncelle"></asp:Button>
-                                            <asp:Button ID="btnCancel"  CssClass="btn btn-warning" runat="server" CausesValidation="False" CommandName="Cancel" Text="iptal"></asp:Button>
+                                            <asp:Button ID="btnCancel" CssClass="btn btn-warning" runat="server" CausesValidation="False" CommandName="Cancel" Text="iptal"></asp:Button>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Button ID="btnEdit" CssClass="btn btn-success" runat="server" CausesValidation="False" CommandName="Edit" Text="Düzenle"></asp:Button>
@@ -147,6 +147,9 @@
                     </div>
                 </ContentTemplate>
             </asp:UpdatePanel>
+        </div>
+        <div style="padding-left:15px;">
+            <asp:Button ID="btnNewUrun" runat="server" Text="Yeni Ürün" class="btn btn-primary" />
         </div>
     </form>
 

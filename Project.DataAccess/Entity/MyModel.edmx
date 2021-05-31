@@ -4,15 +4,17 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="WebAutomationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="WebAutomationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Adminler">
           <Key>
             <PropertyRef Name="AdminID" />
           </Key>
           <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="KullaniciAd" Type="varchar" MaxLength="10" />
-          <Property Name="Sifre" Type="varchar" MaxLength="30" />
-          <Property Name="Yetki" Type="char" MaxLength="1" />
+          <Property Name="Ad" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Soyad" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Sifre" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Yetki" Type="int" />
         </EntityType>
         <EntityType Name="Cariler">
           <Key>
@@ -177,20 +179,10 @@
             <End Role="Urunler" EntitySet="Urunler" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="WebAutomationModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Adminler">
-          <Key>
-            <PropertyRef Name="AdminID" />
-          </Key>
-          <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="KullaniciAd" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="Sifre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="Yetki" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
-        </EntityType>
         <EntityType Name="Cariler">
           <Key>
             <PropertyRef Name="CariID" />
@@ -335,7 +327,6 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="WebAutomationEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Adminler" EntityType="Self.Adminler" />
           <EntitySet Name="Cariler" EntityType="Self.Cariler" />
           <EntitySet Name="Departmanlar" EntityType="Self.Departmanlar" />
           <EntitySet Name="Kategoriler" EntityType="Self.Kategoriler" />
@@ -363,23 +354,25 @@
             <End Role="Urunler" EntitySet="Urunler" />
             <End Role="SatisHareketler" EntitySet="SatisHareketler" />
           </AssociationSet>
+          <EntitySet Name="Adminler" EntityType="WebAutomationModel.Adminler" />
         </EntityContainer>
+        <EntityType Name="Adminler">
+          <Key>
+            <PropertyRef Name="AdminID" />
+          </Key>
+          <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Soyad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Sifre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Yetki" Type="Int32" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="WebAutomationModelStoreContainer" CdmEntityContainer="WebAutomationEntities">
-          <EntitySetMapping Name="Adminler">
-            <EntityTypeMapping TypeName="WebAutomationModel.Adminler">
-              <MappingFragment StoreEntitySet="Adminler">
-                <ScalarProperty Name="AdminID" ColumnName="AdminID" />
-                <ScalarProperty Name="KullaniciAd" ColumnName="KullaniciAd" />
-                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
-                <ScalarProperty Name="Yetki" ColumnName="Yetki" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Cariler">
             <EntityTypeMapping TypeName="WebAutomationModel.Cariler">
               <MappingFragment StoreEntitySet="Cariler">
@@ -457,6 +450,18 @@
                 <ScalarProperty Name="Durum" ColumnName="Durum" />
                 <ScalarProperty Name="UrunGorsel" ColumnName="UrunGorsel" />
                 <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Adminler">
+            <EntityTypeMapping TypeName="WebAutomationModel.Adminler">
+              <MappingFragment StoreEntitySet="Adminler">
+                <ScalarProperty Name="Yetki" ColumnName="Yetki" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="AdminID" ColumnName="AdminID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

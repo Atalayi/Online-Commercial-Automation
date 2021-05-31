@@ -25,7 +25,6 @@ namespace Project.DataAccess.Entity
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Adminler> Adminler { get; set; }
         public virtual DbSet<Cariler> Cariler { get; set; }
         public virtual DbSet<Departmanlar> Departmanlar { get; set; }
         public virtual DbSet<Kategoriler> Kategoriler { get; set; }
@@ -33,5 +32,6 @@ namespace Project.DataAccess.Entity
         public virtual DbSet<SatisHareketler> SatisHareketler { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Urunler> Urunler { get; set; }
+        public virtual DbSet<Adminler> Adminler { get; set; }
     }
 }

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Unauthorized.master.cs" Inherits="Project.Web.Unauthorized" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1">
+        <div id="allContent" runat="server">
+            <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="cariEkle" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="departman" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="departmanEkle" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="kategori" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="kategoriEkle" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="personel" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="personelekle" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="urun" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="urunEkle" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <%--girilecek alan--%>
+    </form>
+</body>
+</html>

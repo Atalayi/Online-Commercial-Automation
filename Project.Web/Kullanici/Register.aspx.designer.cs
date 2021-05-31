@@ -7,63 +7,63 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project.Web.Departman {
+namespace Project.Web.Kullanici {
     
     
-    public partial class DepartmanDefault {
+    public partial class Register {
         
         /// <summary>
-        /// frmDepartman control.
+        /// frmRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm frmDepartman;
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmRegister;
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// inputFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputFirstName;
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// inputLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText inputLastName;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// inputEmailAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inputEmailAddress;
         
         /// <summary>
-        /// myGrid control.
+        /// inputPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView myGrid;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword inputPassword;
         
         /// <summary>
-        /// btnNewDep control.
+        /// btnRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNewDep;
+        protected global::System.Web.UI.WebControls.Button btnRegister;
     }
 }

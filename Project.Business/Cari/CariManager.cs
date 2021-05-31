@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.DataAccess
+namespace Project.Business.Cari
 {
-    public class Class1
+    class CariManager
     {
     }
 }

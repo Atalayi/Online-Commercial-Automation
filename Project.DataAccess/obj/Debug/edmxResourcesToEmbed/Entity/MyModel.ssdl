@@ -5,9 +5,11 @@
       <PropertyRef Name="AdminID" />
     </Key>
     <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="KullaniciAd" Type="varchar" MaxLength="10" />
-    <Property Name="Sifre" Type="varchar" MaxLength="30" />
-    <Property Name="Yetki" Type="char" MaxLength="1" />
+    <Property Name="Ad" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Soyad" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sifre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Yetki" Type="int" />
   </EntityType>
   <EntityType Name="Cariler">
     <Key>

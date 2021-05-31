@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="PersonelDefault.aspx.cs" Inherits="Project.Web.Personel.PersonelDefault" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -10,7 +11,7 @@
             <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                 <ContentTemplate>
                     <div class="col-md-12">
-                        <div class="table-responsive" style="overflow:visible">
+                        <div class="table-responsive" style="overflow: visible">
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WebAutomationConnectionString %>" DeleteCommand="DELETE FROM [Personeller] WHERE [PersonelID] = @PersonelID" InsertCommand="INSERT INTO [Personeller] ([PersonelAd], [PersonelSoyad], [PersonelGorsel], [DepartmanID]) VALUES (@PersonelAd, @PersonelSoyad, @PersonelGorsel, @DepartmanID)" SelectCommand="SELECT * FROM [Personeller]" UpdateCommand="UPDATE [Personeller] SET [PersonelAd] = @PersonelAd, [PersonelSoyad] = @PersonelSoyad, [PersonelGorsel] = @PersonelGorsel, [DepartmanID] = @DepartmanID WHERE [PersonelID] = @PersonelID">
                                 <DeleteParameters>
                                     <asp:Parameter Name="PersonelID" Type="Int32" />
@@ -32,7 +33,7 @@
                             <asp:GridView ID="myGrid" CssClass="table table-bordered table-hover table-active" Width="100%" runat="server" AutoGenerateColumns="False" DataKeyNames="PersonelID" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" BorderColor="#3366CC" BorderWidth="1px" OnRowCommand="myGrid_RowCommand">
                                 <AlternatingRowStyle BackColor="White" />
                                 <Columns>
-                                    
+
                                     <asp:TemplateField HeaderText="PersonelID" InsertVisible="False" SortExpression="PersonelID">
                                         <EditItemTemplate>
                                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("PersonelID") %>'></asp:Label>
@@ -103,6 +104,9 @@
                     </div>
                 </ContentTemplate>
             </asp:UpdatePanel>
+        </div>
+        <div style="padding-left: 15px;">
+            <asp:Button ID="btnNewPer" runat="server" Text="Yeni Personel" class="btn btn-primary" />
         </div>
     </form>
 </asp:Content>

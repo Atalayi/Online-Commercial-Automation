@@ -7,63 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project.Web.Departman {
+namespace Project.Web.Kullanici {
     
     
-    public partial class DepartmanDefault {
+    public partial class Login {
         
         /// <summary>
-        /// frmDepartman control.
+        /// frmLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm frmDepartman;
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmLogin;
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// inputEmailAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl inputEmailAddress;
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// inputPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword inputPassword;
         
         /// <summary>
-        /// SqlDataSource1 control.
+        /// btnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
-        /// <summary>
-        /// myGrid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView myGrid;
-        
-        /// <summary>
-        /// btnNewDep control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNewDep;
+        protected global::System.Web.UI.WebControls.Button btnLogin;
     }
 }

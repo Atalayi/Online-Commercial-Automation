@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="WebAutomationModelStoreContainer" CdmEntityContainer="WebAutomationEntities">
-    <EntitySetMapping Name="Adminler">
-      <EntityTypeMapping TypeName="WebAutomationModel.Adminler">
-        <MappingFragment StoreEntitySet="Adminler">
-          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
-          <ScalarProperty Name="KullaniciAd" ColumnName="KullaniciAd" />
-          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
-          <ScalarProperty Name="Yetki" ColumnName="Yetki" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Cariler">
       <EntityTypeMapping TypeName="WebAutomationModel.Cariler">
         <MappingFragment StoreEntitySet="Cariler">
@@ -88,6 +78,18 @@
           <ScalarProperty Name="Durum" ColumnName="Durum" />
           <ScalarProperty Name="UrunGorsel" ColumnName="UrunGorsel" />
           <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adminler">
+      <EntityTypeMapping TypeName="WebAutomationModel.Adminler">
+        <MappingFragment StoreEntitySet="Adminler">
+          <ScalarProperty Name="Yetki" ColumnName="Yetki" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

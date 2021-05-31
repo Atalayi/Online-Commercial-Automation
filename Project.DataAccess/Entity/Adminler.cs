@@ -15,8 +15,10 @@ namespace Project.DataAccess.Entity
     public partial class Adminler
     {
         public int AdminID { get; set; }
-        public string KullaniciAd { get; set; }
+        public string Ad { get; set; }
+        public string Soyad { get; set; }
+        public string Email { get; set; }
         public string Sifre { get; set; }
-        public string Yetki { get; set; }
+        public Nullable<int> Yetki { get; set; }
     }
 }

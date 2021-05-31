@@ -114,13 +114,14 @@
                                 <SortedAscendingHeaderStyle BackColor="#6D95E1" />
                                 <SortedDescendingCellStyle BackColor="#E9EBEF" />
                                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
-
                             </asp:GridView>
                         </div>
                     </div>
                 </ContentTemplate>
             </asp:UpdatePanel>
         </div>
-
+        <div style="padding-left: 15px;">
+            <asp:Button ID="btnNewCari" runat="server" Text="Yeni Cari" class="btn btn-primary" />
+        </div>
     </form>
 </asp:Content>

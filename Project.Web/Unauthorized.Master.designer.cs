@@ -10,7 +10,7 @@
 namespace Project.Web {
     
     
-    public partial class MainMasterPage {
+    public partial class Unauthorized {
         
         /// <summary>
         /// head control.
@@ -22,13 +22,22 @@ namespace Project.Web {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-        /// cari control.
+        /// allContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cari;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl allContent;
+        
+        /// <summary>
+        /// body control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder body;
         
         /// <summary>
         /// cariEkle control.
