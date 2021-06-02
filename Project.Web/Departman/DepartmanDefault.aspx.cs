@@ -24,5 +24,10 @@ namespace Project.Web.Departman
 
             }
         }
+
+        protected void btnNewDep_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DepartmanEkle.aspx");
+        }
     }
 }

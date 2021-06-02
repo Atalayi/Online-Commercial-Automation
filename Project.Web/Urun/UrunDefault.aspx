@@ -101,14 +101,14 @@
                                             <asp:CheckBox ID="CheckBox1" runat="server" Checked='<%# Bind("Durum") %>' Enabled="false" />
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="Ürün Görseli" SortExpression="UrunGorsel">
+                                    <%--<asp:TemplateField HeaderText="Ürün Görseli" SortExpression="UrunGorsel">
                                         <EditItemTemplate>
                                             <asp:TextBox ID="TextBox6" Width="100%" runat="server" Text='<%# Bind("UrunGorsel") %>'></asp:TextBox>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label7" runat="server" Text='<%# Bind("UrunGorsel") %>'></asp:Label>
                                         </ItemTemplate>
-                                    </asp:TemplateField>
+                                    </asp:TemplateField>--%>
                                     <asp:TemplateField HeaderText="KategoriId" SortExpression="KategoriId">
                                         <EditItemTemplate>
                                             <asp:TextBox ID="TextBox7" Width="100%" runat="server" Text='<%# Bind("KategoriId") %>'></asp:TextBox>
@@ -149,7 +149,7 @@
             </asp:UpdatePanel>
         </div>
         <div style="padding-left:15px;">
-            <asp:Button ID="btnNewUrun" runat="server" Text="Yeni Ürün" class="btn btn-primary" />
+            <asp:Button ID="btnNewUrun" runat="server" Text="Yeni Ürün" class="btn btn-primary" OnClick="btnNewUrun_Click" />
         </div>
     </form>
 

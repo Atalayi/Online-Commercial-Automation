@@ -53,7 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Entity\Adminler.cs">
       <DependentUpon>MyModel.tt</DependentUpon>
     </Compile>

@@ -91,7 +91,7 @@
             </asp:UpdatePanel>
         </div>
         <div style="padding-left:15px;">
-            <asp:Button ID="btnNewDep" runat="server" Text="Yeni Departman" class="btn btn-primary" />
+            <asp:Button ID="btnNewDep" runat="server" Text="Yeni Departman" class="btn btn-primary" OnClick="btnNewDep_Click" />
         </div>
     </form>
 </asp:Content>

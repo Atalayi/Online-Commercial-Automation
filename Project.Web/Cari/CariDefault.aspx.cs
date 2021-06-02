@@ -24,5 +24,10 @@ namespace Project.Web.Cari
 
             }
         }
+
+        protected void btnNewCari_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CariEkle.aspx");
+        }
     }
 }

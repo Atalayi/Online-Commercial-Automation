@@ -52,9 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cari\CariManager.cs" />
+    <Compile Include="Departman\DepartmanManager.cs" />
     <Compile Include="Kategori\KategoriManager.cs" />
+    <Compile Include="Personel\PersonelManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sessions.cs" />
+    <Compile Include="Urun\UrunManager.cs" />
     <Compile Include="UserManager.cs" />
   </ItemGroup>
   <ItemGroup>

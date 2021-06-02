@@ -9,7 +9,7 @@
     <Property Name="Soyad" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Sifre" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="Yetki" Type="int" />
+    <Property Name="Yetki" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Cariler">
     <Key>
@@ -18,8 +18,8 @@
     <Property Name="CariID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CariAd" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="CariSoyad" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="CariSehir" Type="varchar" MaxLength="15" />
-    <Property Name="CariMail" Type="varchar" MaxLength="50" />
+    <Property Name="CariSehir" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="CariMail" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Durum" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="Departmanlar">
@@ -27,7 +27,7 @@
       <PropertyRef Name="DepartmanID" />
     </Key>
     <Property Name="DepartmanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="DepartmanAd" Type="varchar" MaxLength="30" />
+    <Property Name="DepartmanAd" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="Durum" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="Kategoriler">
@@ -35,15 +35,15 @@
       <PropertyRef Name="KategoriID" />
     </Key>
     <Property Name="KategoriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="KategoriAd" Type="varchar" MaxLength="30" />
+    <Property Name="KategoriAd" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityType Name="Personeller">
     <Key>
       <PropertyRef Name="PersonelID" />
     </Key>
     <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="PersonelAd" Type="varchar" MaxLength="30" />
-    <Property Name="PersonelSoyad" Type="varchar" MaxLength="30" />
+    <Property Name="PersonelAd" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PersonelSoyad" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="PersonelGorsel" Type="varchar" MaxLength="250" />
     <Property Name="DepartmanID" Type="int" Nullable="false" />
   </EntityType>
@@ -75,8 +75,8 @@
       <PropertyRef Name="UrunID" />
     </Key>
     <Property Name="UrunID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UrunAd" Type="varchar" MaxLength="30" />
-    <Property Name="Marka" Type="varchar" MaxLength="30" />
+    <Property Name="UrunAd" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Marka" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="Stok" Type="smallint" Nullable="false" />
     <Property Name="AlisFiyat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="SatisFiyat" Type="decimal" Precision="18" Scale="2" Nullable="false" />

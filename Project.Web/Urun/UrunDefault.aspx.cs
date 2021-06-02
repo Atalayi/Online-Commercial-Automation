@@ -25,5 +25,10 @@ namespace Project.Web.Urun
 
             }
         }
+
+        protected void btnNewUrun_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UrunEkle.aspx");
+        }
     }
 }

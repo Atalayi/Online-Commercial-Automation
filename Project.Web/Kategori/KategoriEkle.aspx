@@ -1,10 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMasterPage.Master" AutoEventWireup="true" CodeBehind="KategoriEkle.aspx.cs" Inherits="Project.Web.Kategori.KategoriEkle" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <head>
         <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-        <title></title>
-    </head>
+        <title>Yeni Kategori</title>
 </asp:Content>
 
 <asp:Content ID="Content5" ContentPlaceHolderID="kategoriEkle" runat="server">

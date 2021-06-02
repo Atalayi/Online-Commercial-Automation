@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cari\CariDefault.aspx" />
+    <Content Include="Cari\CariEkle.aspx" />
     <Content Include="Content\.gitignore" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -123,11 +124,13 @@
     <Content Include="Content\src\assets\img\error-404-monochrome.svg" />
     <Content Include="Content\src\js\scripts.js" />
     <Content Include="Departman\DepartmanDefault.aspx" />
+    <Content Include="Departman\DepartmanEkle.aspx" />
     <Content Include="Kategori\KategoriDefault.aspx" />
     <Content Include="Kategori\KategoriEkle.aspx" />
     <Content Include="Kullanici\Login.aspx" />
     <Content Include="Kullanici\Register.aspx" />
     <Content Include="Personel\PersonelDefault.aspx" />
+    <Content Include="Personel\PersonelEkle.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -228,6 +231,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Urun\UrunDefault.aspx" />
+    <Content Include="Urun\UrunEkle.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -238,12 +242,26 @@
     <Compile Include="Cari\CariDefault.aspx.designer.cs">
       <DependentUpon>CariDefault.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cari\CariEkle.aspx.cs">
+      <DependentUpon>CariEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cari\CariEkle.aspx.designer.cs">
+      <DependentUpon>CariEkle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Departman\DepartmanDefault.aspx.cs">
       <DependentUpon>DepartmanDefault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Departman\DepartmanDefault.aspx.designer.cs">
       <DependentUpon>DepartmanDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Departman\DepartmanEkle.aspx.cs">
+      <DependentUpon>DepartmanEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Departman\DepartmanEkle.aspx.designer.cs">
+      <DependentUpon>DepartmanEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kategori\KategoriDefault.aspx.cs">
       <DependentUpon>KategoriDefault.aspx</DependentUpon>
@@ -287,6 +305,13 @@
     <Compile Include="Personel\PersonelDefault.aspx.designer.cs">
       <DependentUpon>PersonelDefault.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Personel\PersonelEkle.aspx.cs">
+      <DependentUpon>PersonelEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personel\PersonelEkle.aspx.designer.cs">
+      <DependentUpon>PersonelEkle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Unauthorized.Master.cs">
       <DependentUpon>Unauthorized.Master</DependentUpon>
@@ -301,6 +326,13 @@
     </Compile>
     <Compile Include="Urun\UrunDefault.aspx.designer.cs">
       <DependentUpon>UrunDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Urun\UrunEkle.aspx.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Urun\UrunEkle.aspx.designer.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

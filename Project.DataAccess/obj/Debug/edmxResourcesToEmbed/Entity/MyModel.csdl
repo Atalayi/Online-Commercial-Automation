@@ -7,8 +7,8 @@
     <Property Name="CariID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CariAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="CariSoyad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="CariSehir" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-    <Property Name="CariMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CariSehir" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CariMail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Durum" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="SatisHareketler" Relationship="Self.FK_SatisHareketler_Cariler" FromRole="Cariler" ToRole="SatisHareketler" />
   </EntityType>
@@ -17,7 +17,7 @@
       <PropertyRef Name="DepartmanID" />
     </Key>
     <Property Name="DepartmanID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="DepartmanAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DepartmanAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Durum" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Personeller" Relationship="Self.FK_Personeller_Departmanlar" FromRole="Departmanlar" ToRole="Personeller" />
   </EntityType>
@@ -26,7 +26,7 @@
       <PropertyRef Name="KategoriID" />
     </Key>
     <Property Name="KategoriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="KategoriAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="KategoriAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="Urunler" Relationship="Self.FK_Urunler_Kategoriler" FromRole="Kategoriler" ToRole="Urunler" />
   </EntityType>
   <EntityType Name="Personeller">
@@ -34,8 +34,8 @@
       <PropertyRef Name="PersonelID" />
     </Key>
     <Property Name="PersonelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="PersonelAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="PersonelSoyad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PersonelAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PersonelSoyad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="PersonelGorsel" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="DepartmanID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Departmanlar" Relationship="Self.FK_Personeller_Departmanlar" FromRole="Personeller" ToRole="Departmanlar" />
@@ -72,8 +72,8 @@
       <PropertyRef Name="UrunID" />
     </Key>
     <Property Name="UrunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="UrunAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="Marka" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="UrunAd" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Marka" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Stok" Type="Int16" Nullable="false" />
     <Property Name="AlisFiyat" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
     <Property Name="SatisFiyat" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
@@ -182,6 +182,6 @@
     <Property Name="Soyad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Sifre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="Yetki" Type="Int32" />
+    <Property Name="Yetki" Type="Int32" Nullable="false" />
   </EntityType>
 </Schema>

@@ -34,7 +34,7 @@
                                 <AlternatingRowStyle BackColor="White" />
                                 <Columns>
 
-                                    <asp:TemplateField HeaderText="PersonelID" InsertVisible="False" SortExpression="PersonelID">
+                                    <asp:TemplateField HeaderText="ID" InsertVisible="False" SortExpression="PersonelID">
                                         <EditItemTemplate>
                                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("PersonelID") %>'></asp:Label>
                                         </EditItemTemplate>
@@ -42,7 +42,7 @@
                                             <asp:Label ID="Label1" runat="server" Text='<%# Bind("PersonelID") %>'></asp:Label>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="PersonelAd" SortExpression="PersonelAd">
+                                    <asp:TemplateField HeaderText="Personel Adı" SortExpression="PersonelAd">
                                         <EditItemTemplate>
                                             <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("PersonelAd") %>'></asp:TextBox>
                                         </EditItemTemplate>
@@ -50,7 +50,7 @@
                                             <asp:Label ID="Label2" runat="server" Text='<%# Bind("PersonelAd") %>'></asp:Label>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="PersonelSoyad" SortExpression="PersonelSoyad">
+                                    <asp:TemplateField HeaderText="Personel Soyadı" SortExpression="PersonelSoyad">
                                         <EditItemTemplate>
                                             <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("PersonelSoyad") %>'></asp:TextBox>
                                         </EditItemTemplate>
@@ -58,14 +58,14 @@
                                             <asp:Label ID="Label3" runat="server" Text='<%# Bind("PersonelSoyad") %>'></asp:Label>
                                         </ItemTemplate>
                                     </asp:TemplateField>
-                                    <asp:TemplateField HeaderText="PersonelGorsel" SortExpression="PersonelGorsel">
+                                    <%--<asp:TemplateField HeaderText="PersonelGorsel" SortExpression="PersonelGorsel">
                                         <EditItemTemplate>
                                             <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("PersonelGorsel") %>'></asp:TextBox>
                                         </EditItemTemplate>
                                         <ItemTemplate>
                                             <asp:Label ID="Label4" runat="server" Text='<%# Bind("PersonelGorsel") %>'></asp:Label>
                                         </ItemTemplate>
-                                    </asp:TemplateField>
+                                    </asp:TemplateField>--%>
                                     <asp:TemplateField HeaderText="DepartmanID" SortExpression="DepartmanID">
                                         <EditItemTemplate>
                                             <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("DepartmanID") %>'></asp:TextBox>
@@ -106,7 +106,7 @@
             </asp:UpdatePanel>
         </div>
         <div style="padding-left: 15px;">
-            <asp:Button ID="btnNewPer" runat="server" Text="Yeni Personel" class="btn btn-primary" />
+            <asp:Button ID="btnNewPer" runat="server" Text="Yeni Personel" class="btn btn-primary" OnClick="btnNewPer_Click" />
         </div>
     </form>
 </asp:Content>

@@ -121,7 +121,7 @@
             </asp:UpdatePanel>
         </div>
         <div style="padding-left: 15px;">
-            <asp:Button ID="btnNewCari" runat="server" Text="Yeni Cari" class="btn btn-primary" />
+            <asp:Button ID="btnNewCari" runat="server" Text="Yeni Cari" class="btn btn-primary" OnClick="btnNewCari_Click" />
         </div>
     </form>
 </asp:Content>
